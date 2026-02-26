@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
-const DEPLOY_SCRIPT = \`#!/usr/bin/env node
-const {execSync,spawn}=require('child_process'),fs=require('fs'),path=require('path'),readline=require('readline');
+const DEPLOY_SCRIPT = \`const {execSync,spawn}=require('child_process'),fs=require('fs'),path=require('path'),readline=require('readline');
 const c={r:'\\x1b[0m',b:'\\x1b[1m',c:'\\x1b[36m',g:'\\x1b[32m',y:'\\x1b[33m',m:'\\x1b[35m',bl:'\\x1b[34m'};
 const P='CRYSNOVA_AI',R='https://github.com/crysnovax/CRYSNOVA_AI.git';
 const rl=readline.createInterface({input:process.stdin,output:process.stdout});
